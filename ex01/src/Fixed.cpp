@@ -6,7 +6,7 @@
 /*   By: pviegas <pviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 14:34:43 by pviegas           #+#    #+#             */
-/*   Updated: 2024/03/28 17:00:36 by pviegas          ###   ########.fr       */
+/*   Updated: 2024/03/29 12:39:39 by pviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,10 +57,9 @@ Fixed::~Fixed()
 	std::cout << "Destructor called" << std::endl;
 }
 
-// Member Functions
+// Getter
 int Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
 	return _value;
 }
 
@@ -73,7 +72,7 @@ void Fixed::setRawBits(int const raw)
 // Member Functions
 float Fixed::toFloat() const
 {
-	return ((float)_value / (1 << _fractionalBits));
+	return (static_cast<float>(_value) / (1 << _fractionalBits));
 }
 
 // Member Functions

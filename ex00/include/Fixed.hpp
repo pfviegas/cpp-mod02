@@ -6,7 +6,7 @@
 /*   By: pviegas <pviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 14:28:18 by pviegas           #+#    #+#             */
-/*   Updated: 2024/03/28 16:59:04 by pviegas          ###   ########.fr       */
+/*   Updated: 2024/03/29 11:16:10 by pviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ fixed point number <32, 8>
 8 bits para a fração
 1 bit para sinal do número
 
-_value: todos os bits representados como se fosse um número inteiro
-_fractionalBits: número de bits mais à direita usados para a parte fracionária:
+_value: Armazena o valor do número em ponto fixo
+_fractionalBits: Número de bits para a parte fracionária
 */
 
 class	Fixed

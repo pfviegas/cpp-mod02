@@ -6,7 +6,7 @@
 /*   By: pviegas <pviegas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/28 14:34:43 by pviegas           #+#    #+#             */
-/*   Updated: 2024/03/28 16:05:03 by pviegas          ###   ########.fr       */
+/*   Updated: 2024/03/29 11:19:45 by pviegas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Fixed::~Fixed()
 	std::cout << "Destructor called" << std::endl;
 }
 
-// Member Functions
+// Getter
 int Fixed::getRawBits() const
 {
 	std::cout << "getRawBits member function called" << std::endl;
