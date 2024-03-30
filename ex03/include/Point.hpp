@@ -17,7 +17,7 @@ class Point
 {
 	public:
 		Point();
-		Point(Fixed x, Fixed y);
+		Point(float x, float y);
 		Fixed getX() const;
 		Fixed getY() const;
 		

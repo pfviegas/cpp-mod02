@@ -13,19 +13,17 @@
 #include "../include/Fixed.hpp"
 #include "../include/Point.hpp"
 
-// Helper function to calculate the area of a triangle formed by three points
 Fixed calculateTriangleArea( const Point& a, const Point& b, const Point& c )
 {
 	Fixed area = Fixed((b.getX() - a.getX()) * (c.getY() - a.getY()) -
 						(c.getX() - a.getX()) * (b.getY() - a.getY()));
 
-    // Converte para o valor absoluto, garantindo que a área seja sempre positiva
+    // Converts to the absolute value, ensuring that the area is always positive
     area = Fixed(abs(area.getRawBits()));
 	return (area);
 }
 
-// Function to check if a point is inside the triangle using Barycentric coordinate system
-//bool isInsideTriangle(const Point& p, const Point& a, const Point& b, const Point& c)
+// Function to check if a point is inside the triangle
 bool bsp( Point const a, Point const b, Point const c, Point const point )
 {
 	Fixed totalArea = calculateTriangleArea(a, b, c);

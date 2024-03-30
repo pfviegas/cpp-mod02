@@ -16,7 +16,7 @@
 // Default Constructor
 Point::Point() : _x(0), _y(0) {}
 // Parameterized Constructor
-Point::Point(Fixed x, Fixed y) : _x(x), _y(y) {}
+Point::Point(float x, float y) : _x(x), _y(y) {}
 
 // getters
 Fixed Point::getX() const 
